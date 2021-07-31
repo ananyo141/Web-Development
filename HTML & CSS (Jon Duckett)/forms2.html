@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Forms Page 2</title>
+    </head>
+    <body>
+        
+        <!-- Button and hidden -->
+        <form action="#" method="get">
+            <button><img src="https://static.thenounproject.com/png/485692-200.png"
+                alt="Add button" width="30" height="30" />Add</button>
+            <input type="hidden" name="bookmarkpage" value="lyrics" />
+        </form>
+
+        <!-- Labelling Form Controls -->
+        <form action="https://www.example.com/sendto.php" method="get">
+            <label>Age: <input type="text" name="age" /></label>
+            <br />
+            Gender:
+            <input id="female" type="radio" name="gender" value="f">
+            <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" value="m">
+            <label for="male">Male</label>
+        </form>
+
+        <!-- Grouping form elements -->
+        <form>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email:<br />
+            <input type="text" name="email" /></label><br />
+            <label>Mobile:<br />
+            <input type="text" name="mobile" /></label><br />
+            <label>Telephone: <br />
+            <input type="text" name="telephone" /></label>
+        </fieldset>
+        </form>
+
+        <!-- HTML5 Form Validation -->
+        <form action="https://www.example.com/login/" method="post">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required="required" /><br />
+            <label for="password">Password:</label>
+            <input type="text" name="password" required="required" /><br />
+            <input type="submit" value="Submit" />
+        </form>
+
+        <!-- Date Input -->
+        <form action="http://www.example.com/bookings/" method="post">
+            <label for="depart">Departure Date:</label>
+            <input type="date" name="depart" />
+            <input type="submit" value="Submit" />
+        </form>
+
+        <!-- Email and URL Input -->
+        <form action="http://www.example.com/subscribe.php" method="post">
+            <p>Please enter your email address:</p>
+            <input type="email" name="email" />
+            <input type="submit" value="Submit" />
+        </form>
+        <form action="http://www.example.com" method="get">
+            <p>Enter your website URL:</p>
+            <input type="url" name="website" />
+            <input type="submit" value="Submit" />
+        </form>
+
+        <!-- HTML5 Search Input -->
+        <form action="https://www.example.com/search.php" method="get">
+            <p>Search</p>
+            <input type="search" placeholder="Enter keyword" name="search" />
+            <input type="submit" value="Search" />
+        </form>
+
+    </body>
+</html>

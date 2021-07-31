@@ -1,0 +1,43 @@
+/* Different Color Methods */
+
+body {
+    background-color: rgb(200,200,200);
+}
+
+/* Color Name */
+.colorName h1 {
+    color: DarkCyan;
+    background-color: Magenta;
+}
+
+/* RGB Value */
+.colorName h2 {
+    color: rgb(100, 100, 90);
+    background-color: rgb(20, 60, 90);
+}
+
+/* HEX Value */
+.colorName p {
+    color: #ee3e80;
+    background-color: #ffe333;
+}
+
+/* This uses new properties- hsl, hsla and opacity. To ensure compatibility, fallback are instilled. */
+/* Using HSL and Opacity */
+.hsla h1 {
+    background-color: #C8C8C8;
+    background-color: hsl(0,0%,78%);
+    opacity: 0.3;
+}
+
+/* Using HSLA */
+.hsla h2 {
+    color: hsla(20,50%,50%,0.9);
+    background-color: #ffffff;
+    background-color: hsla(0,100%,100%,0.5);
+}
+
+/* Using RGBA */
+.hsla p {
+    color: rgba(255, 153, 255, 0.5);
+}

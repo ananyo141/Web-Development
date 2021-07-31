@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Audio and Video</title>
+    </head>
+    <body>
+
+        <!-- The video file is doesn't exist so the files will not play -->
+
+        <!-- Video Tag -->
+        <video src="./video/puppy.mp4" poster="./images/puppy.jpg" width="400" height="300"
+        preload
+        controls
+        loop>
+        <p>A Video of a puppy playing in snow.</p>
+        </video>
+
+        <!-- Multiple Video Sources -->
+        <video poster="./images/puppy.jpg" width="400" height="320" preload controls loop>
+            <source src="./video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+            <source src="./video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+            <p>A video of puppy playing in the snow.</p>
+        </video>
+
+        <!-- Audio Tag -->
+        <audio src="./audio/test-audio.ogg"controls autoplay>
+            <p>This browser doesn't support HTML5 audio player or the audio format.</p>
+        </audio>
+
+        <!-- Multiple Audio Tag -->
+        <audio controls autoplay>
+            <source src="./audio/test-audio.ogg" />
+            <source src="./audio/test-audio.mp3" />
+            <p>This browser does not support our audio format.</p>
+        </audio>
+      
+    </body>
+</html>

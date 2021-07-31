@@ -1,0 +1,84 @@
+body {
+    padding: 20px;
+    background-color: white;
+    line-height: 1.3em;
+}
+
+h1, h2, h3, a {
+    color: #0088dd;
+}
+
+h3+p {
+    font-weight: bold;
+    color: brown;
+}
+
+h1 {
+    color: deeppink;
+    font-family: serif;
+    font-weight: 10px;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px darkcyan;
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+    font-size: 90%;
+    font-family: "Gill Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: normal;
+    text-align: center;
+}
+    
+a {
+    text-decoration: none;
+}
+
+a.definition {
+    color: magenta;
+    font-size: 3em;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+a:active {
+    color: skyblue;
+}
+
+p {
+    line-height: 1.2em;
+    color: #665544;
+}
+
+
+p.definition {
+    font-family: "Gill Sans", Arial, sans-serif;
+    font-size: 1em;
+}
+
+p.intro {
+    font-family: Arial, Verdana, sans-serif;
+    line-height: 1.3em;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+    color: rgb(72, 82, 221);
+}
+
+p.credits {
+    text-align: right;
+    font-style: italic;
+}

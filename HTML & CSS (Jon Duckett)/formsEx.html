@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Forms Example Webpage</title>
+    </head>
+    <body>
+
+        <form action="https://www.example.com/contact.php" method="post">
+            <fieldset>
+                <legend>Your details:</legend>
+                <label>
+                    Name:
+                    <input type="text" name="name" size="30" maxlength="35" />
+                </label>
+                <br />
+                <label>
+                    Email:
+                    <input type="email" name="email" size="30" maxlength="35" />
+                </label>
+                <br />
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Your review:</legend>
+                <p>
+                    <label for="hear-about">
+                        How did you hear about us?
+                    </label>
+                    <select name="referrer" id="hear-about">
+                        <option value="google">Google</option>
+                        <option value="friend">Friend</option>
+                        <option value="advert">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+                <p>
+                    Would you visit again?
+                    <br />
+                    <label>
+                        <input type="radio" name="rating" value="yes" />Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="no" />No
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="maybe" />Maybe
+                    </label>
+                </p>
+                <p>
+                    <label for="comments">
+                        Comments:
+                    </label>
+                    <br />
+                    <textarea rows="4" cols="40" id="comments" maxlength="100">
+                        Enter your comments here
+                    </textarea>
+                </p>
+                <label>
+                    <input type="checkbox" name="subscription" checked="checked" />
+                    Sign me up for email updates and daily newsletter!
+                </label>
+                <br />
+                <input type="submit" value="Submit Review" />
+            </fieldset>
+        </form>
+     
+    </body>
+</html>

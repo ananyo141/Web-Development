@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List, Tables and Forms</title>
+    <link href="./css/listTableForm.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <h1>The Complete Poems</h1>
+    <h2>Emily Dickinson</h2>
+    <ol>
+        <li>Life</li>
+        <li>Nature</li>
+        <li>Love</li>
+        <li>Time and Eternity</li>
+        <li>The Single Hound</li>
+    </ol>
+
+    <ul>
+        <li>Life</li>
+        <li>Nature</li>
+        <li>Love</li>
+        <li>Time and Eternity</li>
+        <li>The Single Hound</li>
+    </ul>
+
+    <ul class="illuminations">
+        <li>That idol, black eyes and yellow mop, without parents or court ...</li>
+        <li>Gracious son of Pan! Around your forehead crowned with flowrets ...</li>
+        <li>When the world is reduced to a single dark wood for our four ...</li>
+    </ul>
+
+    <table class="tableProperties">
+        <tr>
+            <th>Author</th>
+            <th>Title</th>
+            <th>Reserve Price</th>  
+            <th>Current Bid</th>
+        </tr>
+        <tr class="odd">
+            <td>E.E. Cummings</td>
+            <td>Charles d'Orleans</td>
+            <td class="money">$2,000.00</td>
+            <td class="money">$2,642.50</td>
+        </tr>
+        <tr class="even">
+            <td>Charles d'Orleans</td>
+            <td>Poemes</td>
+            <td class="empty"></td>
+            <td class="money">$5,866.00</td>
+        </tr>
+        <tr class="odd">
+            <td>T.S Elliot</td>
+            <td>Poems 1909-1925</td>
+            <td class="money">$1,250.00</td>
+            <td class="money">$8,499.00</td>
+        </tr>
+        <tr class="even">
+            <td>Sylvia Plath</td>
+            <td>The Colossus</td>
+            <td class="empty"></td>
+            <td class="money">$1031.72</td>
+        </tr>
+    </table>
+
+    <table class="one">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <table class="two">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <form class="text">
+        Name:
+        <input type="text" name="name" placeholder="Enter Your name here" />
+        Password:
+        <input type="password" name="password" placeholder="Enter password" />
+        <textarea name="address">
+        Your Address
+        </textarea>
+        Select box: 
+        <select name="stream" />
+            <option value="cs">CSE</option>
+            <option value="bio">Bio</option>
+        </select>
+        Gender: <input type="radio" name="gender" value="male" />Male <input type="radio" name="gender" value="female" />Female
+    </form>
+
+    <form id="submit">
+        <input type="submit" value="This is Submit Button" />
+    </form>
+
+
+    
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Forms Page 1</title>
+    </head>
+    <body>
+        
+        <!-- This is the first form -->
+        <form action="http://www.subscribe.php" method="get">
+            <p>Username:
+                <input type="text" name="username" size="15" maxlength="17" />
+            </p>
+        </form>
+
+        <!-- This creates a username and password form -->
+        <form action="http://www.userdatabase.php" method="get">
+            <p>Username:
+                <input type="text" name="username" placeholder="Enter Username" maxlength="17" />
+            </p>
+            <p>Password:
+                <input type="password" name="password" placeholder="Enter your password" maxlength="20" />
+            </p>
+        </form>
+
+        <!-- This creates a comment box with textarea element -->
+        <form action="http://www.feedback.php" method="post">
+            <p>How did you like this thing?</p>
+            <textarea name="commentbox" cols="20" rows="4" maxlength="40">Enter your 
+                comments here...</textarea>
+        </form>
+
+        <!-- Radio Buttons -->
+        <form action="http://www.feedback.com/profile.php" method="post">
+            <p>Please select your favourite genre:
+            <br />
+            <input type="radio" name="genre" value="thriller" checked="checked" />Thriller
+            <input type="radio" name="genre" value="drama" />Drama
+            <input type="radio" name="genre" value="psychthriller" />Psychological Thriller
+            <input type="radio" name="genre" value="horror" />Horror
+            </p>
+        </form>
+
+        <!-- Checkbox -->
+        <form action="http://www.userprofile.com/services.php" method="get">
+            <p>Please select your most favourite movie streaming platform(s):
+                <br />
+                <input type="checkbox" name="ottplat" value="netflix" checked="checked" />Netflix
+                <input type="checkbox" name="ottplat" value="amazonprime" />Amazon Prime
+                <input type="checkbox" name="ottplat" value="hotstarpremium" />Disney+ Hotstar
+                <input type="checkbox" name="ottplat" value="zee5" />Zee5
+            </p>
+        </form>
+
+        <!-- Dropdown list box -->
+        <form action="http://www.userprofile.com/survey.php" method="post">
+            <p>Where do you stream movies?</p>
+            <select name="devices">
+                <option value="desktop">Desktop</option>
+                <option value="laptop">Laptop</option>
+                <option value="ipad">iPad</option>
+                <option value="mobile">Mobile</option>
+            </select>
+        </form>
+
+        <!-- Multiple selection box, variant of the dropdown box -->
+        <form action="http://www.userprofile.com/profile.php" method="get">
+            <p>Have you seen any of these movies?
+                (You can select more than one options by holding down the 
+                control on a PC or command on Mac while selecting different options)
+            </p>
+            <select name="movies" size="3" multiple="multiple">
+                <option value="dunkirk" selected="selected">Dunkirk</option>
+                <option value="nightcrawler">Nightcrawler</option>
+                <option value="parasite" selected="selected">Parasite</option>
+                <option value="gifted">Gifted</option>
+            </select>
+        </form>
+        
+        <!-- File input box -->
+        <form action="http://#pdfdrive.com/upload.php" method="post">
+            <p>Upload your script in PDF format</p>
+            <input type="file" name="user-script" /><br />
+            <input type="submit" value="Upload" />
+        </form>
+
+        <!-- Submit button, second one with an image -->
+        <form action="http://userdatabase.com/feedback.com" method="post">
+            <p>Thanks for your interest! Subscribe to our mailing list:</p>
+            <input type="text" name="email" placeholder="Enter your email here" />
+            <input type="submit" name="subscribe" value="Subscribe" />
+            <input type="image" src="https://freepngimg.com/thumb/submit_button/25432-3-submit-button-file.png"
+             width="100" height="30" name="subscribe" />
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Video Example Webpage</title>
+    </head>
+    <body>
+        <!-- The video file is doesn't exist so the file will not play -->
+        <video poster="./images/puppy.jpg" width="400" height="320" controls="controls">
+            <source src="./video/puppy.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+            <source src="./video/puppy.webm" type='video/webm;codecs="vp8, vorbis"' />
+            <div id="snow">
+                <p>You cannot see this video of a puppy playing in the snow because your browser
+                    doesn't support our video formats.</p>
+            </div>
+        </video>
+    </body>
+</html>

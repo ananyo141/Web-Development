@@ -1,0 +1,59 @@
+/* Universal Selector */
+* {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+/* Body Selector */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #665544;
+    padding: 10px;
+    background-color: pink;
+}
+
+/* Inheritance (From the body selector) */
+.page {
+    border: 1px solid #665544;
+    background-color: #efefef;
+    padding: inherit;
+}
+
+/* Type Selector */
+h1, h2, h3 {
+    font-family: "Courier New", monospace;
+}
+
+/* Class selector */
+.note {
+    color: blue;
+}
+
+/* ID Selector */
+#introduction {
+    background-color: green;
+}
+
+/* Child Selector */
+li>a {
+    font-size: 100%;
+}
+
+/* Descendant Selector */
+p a {
+    color: violet;
+}
+
+/* Adjascent Sibling Selector 
+Targets the first <p> after any <h1> element*/
+h1+p {
+    font-size: 75%;
+    font-style: bold;
+}
+
+/* General Sibling Selector
+Matches more sibling elements, doesn't have to be directly adjascent */
+h1-p {
+    font-size: 30%;
+    font-style: italic;
+}
+
