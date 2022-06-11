@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=PT+Sans:wght@700&family=Raleway&display=swap');
+
+html {
+  background-color: rgb(30, 30, 30);
+}
+
+body {
+  font-family: "Raleway", serif;
+
+  margin: 20px 20px;
+  color: rgb(197, 197, 197);
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro > h1 {
+  font-size: 350%;
+  opacity: 90%;
+}
+
+.intro p {
+  font-size: 130%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.buttons button {
+  padding: 15px;
+  border-radius: 5px;
+  font-family: "Nunito", "PT Sans", "Raleway";
+  font-size: 17px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+#tryForWork {
+  background-color: #125ab8;
+  color: white;
+}
+
+#gotoForms {
+  background-color: rgb(30, 30, 30);
+  color: rgb(6, 154, 213);
+  border: 1px solid rgb(160, 160, 255);
+}
+
+.formimg {
+  width: 600px;
+  float: center;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 80%;
+    margin: 20px 20px;
+}
+
+.signup a {
+    text-decoration: none;
+    color:rgb(6, 154, 213);
+    font-weight: bold;
+}
