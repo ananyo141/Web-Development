@@ -9,73 +9,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <div class="border-b-2 border-b-black min-w-fit">
-      <nav class="w-full flex justify-between items-center bg-transparent p-4">
-        <div class="text-4xl text-gray-700 cursor-pointer">
-          <a href="#"
-            ><span class="font-roboto hover:text-black font-bold">Google</span>
-            Forms</a
-          >
-        </div>
+    <!-- Navbar with all Buttons -->
+    <div class="w-full">
+      <!-- Nav will have two div children each for left and right parts of the bar -->
+      <nav
+        class="w-full shadow-md flex fixed bg-white justify-between items-center bg-transparent p-4"
+      >
+        <!-- Left Side -->
+        <div
+          class="flex items-center justify-between text-gray-700 cursor-pointer"
+        >
+          <!-- Logo -->
+          <div class="flex text-3xl justify-start">
+            <img
+              src="https://kstatic.googleusercontent.com/files/9f04faac24aed8bf8fb381029de951128d1d36373f89675265a6654d0c47b74b2d83a26b68b834ce2eea3bfe8001966f76895888138f135a81d099fc207c73bb"
+              alt="Google Forms Logo"
+            />
+            <a href="#"
+              ><span class="font-roboto hover:text-black font-semibold"
+                >Google</span
+              >
+              <span class="text-gray-600">Forms</span></a
+            >
+          </div>
 
-        <div>
-          <ul class="flex flex-row justify-around space-x-6">
-            <a href="#"
-              ><li class="bg-red-500 px-4 rounded-full text-white">Home</li></a
-            >
-            <a href="#"
-              ><li class="bg-red-500 px-4 rounded-full text-white">About</li></a
-            >
-            <a href="#"
-              ><li class="bg-red-500 px-4 rounded-full text-white">
-                Contacts
-              </li></a
-            >
+          <!-- Choices -->
+          <ul class="flex ml-4 tracking-wide text-lg">
+            <li></li>
+            <li class="p-4 hover:text-black">Overview</li>
+            <li class="p-4 hover:text-black">Features</li>
+            <li class="p-4 hover:text-black">Security</li>
+            <li class="p-4 hover:text-black">Pricing</li>
           </ul>
+        </div>
+        <!-- Left Side End -->
+
+        <!-- Right Side -->
+        <div class="flex space-x-4">
+          <ul
+            class="flex justify-between space-x-3 items-center cursor-pointer"
+          >
+            <li></li>
+            <li class="hover:bg-gray-100 p-4 rounded-md">
+              More Tools <i class="bi bi-caret-down-fill"></i>
+            </li>
+            <li class="hover:bg-gray-100 p-4 rounded-md text-blue-700">
+              Sign in
+            </li>
+          </ul>
+
+          <div class="flex gap-3 items-center justify-center">
+            <button
+              class="text-blue-600 font-bold border px-8 py-3 rounded-md hover:border-blue-800"
+            >
+              Go to Forms
+            </button>
+
+            <button
+              class="text-white font-bold bg-blue-600 rounded-md px-5 py-3 border hover:bg-blue-800"
+            >
+              Try Forms for Work
+            </button>
+          </div>
         </div>
       </nav>
     </div>
+    <!-- Navbar end -->
 
+    <!-- Page Contents -->
     <section>
-      <div class="flex flex-col gap-8">
-        <div class="flex text-center flex-col items-center">
-          <h1 class="text-5xl text-black text-opacity-80 my-3 ml-4">
-            Get insights quickly, with Google Forms
-          </h1>
-          <p class="text-xl mx-4 text-gray-700 my-3 max-wd-sm">
-            Easily create and share online forms and surveys, and analyze
-            responses in real-time.
-          </p>
+        <div class="flex flex-col gap-8">
+          <div class="flex text-center flex-col items-center mt-40">
+            <h1 class="text-5xl text-black text-opacity-80 my-3 ml-4">
+              Get insights quickly, with Google Forms
+            </h1>
+            <p class="text-xl mx-4 text-gray-700 my-3 max-wd-sm">
+              Easily create and share online forms and surveys, and analyze
+              responses in real-time.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-wrap space-y-6 gap-3 space-x-6 items-baseline justify-center"
+          >
+            <button
+              class="text-white font-bold bg-blue-600 rounded-md px-5 py-3 border hover:bg-blue-800"
+            >
+              Try Forms for Work
+            </button>
+            <button
+              class="text-blue-600 font-bold border px-8 py-3 rounded-md hover:border-blue-800"
+            >
+              Go to Forms
+            </button>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-5">
+            <p class="text-gray-700">Don't have an account?</p>
+            <p class="cursor-pointer text-blue-600 hover:text-blue-800">
+              Sign up for free
+            </p>
+          </div>
         </div>
 
-        <div
-          class="flex flex-wrap space-y-6 gap-3 space-x-6 items-baseline justify-center"
-        >
-          <button
-            class="text-white font-bold bg-blue-600 rounded-md px-5 py-3 border hover:bg-blue-800"
-          >
-            Try Forms for Work
-          </button>
-          <button
-            class="text-blue-600 font-bold border px-8 py-3 rounded-md hover:border-blue-800"
-          >
-            Go to Forms
-          </button>
-        </div>
-
-        <div class="flex flex-wrap justify-center gap-5">
-          <p class="text-gray-700">Don't have an account?</p>
-          <p class="cursor-pointer text-blue-600 hover:text-blue-800">
-            Sign up for free
-          </p>
-        </div>
-      </div>
     </section>
   </body>
 </html>
