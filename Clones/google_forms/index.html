@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://cdn.techjuice.pk/wp-content/uploads/2021/04/Google-Lens-Logo-Featured-scaled.jpg"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
@@ -20,10 +25,10 @@
 
   <body>
     <!-- Navbar with all Buttons -->
-    <div class="w-full">
+    <div class="fixed z-50 top-0 w-full">
       <!-- Nav will have two div children each for left and right parts of the bar -->
       <nav
-        class="w-full shadow-md flex fixed bg-white justify-between items-center bg-transparent p-4"
+        class="w-full shadow-md flex bg-white justify-between items-center p-4"
       >
         <!-- Left Side -->
         <div
@@ -87,57 +92,95 @@
     <!-- Navbar end -->
 
     <!-- Page Contents -->
-    <section class="">
-      <!-- Outer Div, contain both text and image horizontally -->
-      <div class="flex justify-center gap-8 items-center">
-        <div class="flex flex-col gap-8 max-w-md justify-left">
-          <div class="flex text-left flex-col items-center mt-40">
-            <h1 class="text-6xl text-black text-opacity-80 my-3">
-              Get insights quickly, with Google Forms
-            </h1>
-            <p class="text-xl text-gray-700 my-3 max-wd-sm">
-              Easily create and share online forms and surveys, and analyze
-              responses in real-time.
-            </p>
+    <div class="page-content space-y-8 mb-12">
+      <section>
+        <!-- Outer Div, contain both text and image horizontally -->
+        <div class="flex justify-center gap-8 items-center">
+          <div class="flex flex-col gap-8 max-w-md justify-left">
+            <div class="flex text-left flex-col items-center mt-40">
+              <h1 class="text-6xl text-black text-opacity-80 my-3">
+                Get insights quickly, with Google Forms
+              </h1>
+              <p class="text-xl text-gray-700 my-3 max-wd-sm">
+                Easily create and share online forms and surveys, and analyze
+                responses in real-time.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap space-y-6 gap-4 items-baseline">
+              <button
+                class="text-white font-bold bg-blue-600 rounded-md px-5 py-3 border hover:bg-blue-800"
+              >
+                Try Forms for Work
+              </button>
+              <button
+                class="text-blue-600 font-bold border px-8 py-3 rounded-md hover:border-blue-800"
+              >
+                Go to Forms
+              </button>
+            </div>
+
+            <div class="flex flex-wrap justify-left gap-5">
+              <p class="text-gray-700">Don't have an account?</p>
+              <p class="cursor-pointer text-blue-600 hover:text-blue-800">
+                Sign up for free
+              </p>
+            </div>
           </div>
 
-          <div class="flex flex-wrap space-y-6 gap-4 items-baseline">
-            <button
-              class="text-white font-bold bg-blue-600 rounded-md px-5 py-3 border hover:bg-blue-800"
-            >
-              Try Forms for Work
-            </button>
-            <button
-              class="text-blue-600 font-bold border px-8 py-3 rounded-md hover:border-blue-800"
-            >
-              Go to Forms
-            </button>
-          </div>
+          <img
+            class="mt-40 max-w-3xl"
+            src="https://lh3.googleusercontent.com/DdO4EtwzMPrHk1_ICy2CUuJp_flijkJ0VEJ1GAyXUHW-s7qHKTIy3AxiwyYdN42p7HVVi3AxOK6qWG5ABrtTm-8D9w_9yoE4w8wM0SSpmJXYwxmmN_A=s0"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <hr class="my-8 max-w-7xl mx-auto" />
 
-          <div class="flex flex-wrap justify-left gap-5">
-            <p class="text-gray-700">Don't have an account?</p>
-            <p class="cursor-pointer text-blue-600 hover:text-blue-800">
-              Sign up for free
-            </p>
-          </div>
+        <div class="flex flex-col justify-center">
+          <p class="text-center font-roboto text-gray-600">
+            See what you can do with Google Forms
+          </p>
+          <p class="text-center text-xl text-gray-600">
+            <i class="bi bi-arrow-down"></i>
+          </p>
+        </div>
+      </section>
+
+      <!-- Second Section -->
+      <section>
+        <div class="relative">
+          <img
+            class="absolute overflow-hidden -top-24 w-56 right-4"
+            src="https://lh3.googleusercontent.com/w31V3-kAcYjwDYoHLWVpc4BaMBmfk76mBljUelxl8ozgzyCMa0kMNNl7IvEsl47bUnMsk5ogVW8iV54aT-nujBtTgtwAfFk66boC6S1FLo8DWXS7I6k=w1700"
+            alt="Background"
+          />
         </div>
 
-        <img
-          class="mt-40 max-w-3xl"
-          src="https://lh3.googleusercontent.com/DdO4EtwzMPrHk1_ICy2CUuJp_flijkJ0VEJ1GAyXUHW-s7qHKTIy3AxiwyYdN42p7HVVi3AxOK6qWG5ABrtTm-8D9w_9yoE4w8wM0SSpmJXYwxmmN_A=s0"
-          alt=""
-          srcset=""
-        />
-      </div>
-      <hr class="my-8 max-w-7xl mx-auto" />
-    </section>
+        <!-- Container for image and text -->
+        <div class="flex items-center justify-center gap-x-16">
+          <img
+            class="max-w-2xl h-auto bg-local"
+            src="https://lh3.googleusercontent.com/m0yF4miYUwX5Iy19tKYbMElej8Q5SWeV5mU0XTYknCcYBZipW9C3D5ldoF68iKURaRNiJuNXsZ8C7eN93_KfRR9zOtUqFXk9VKm2_YW38tSGz8VNaI4=w0-l80-sg-rj-c0xffffff"
+            alt="Customer Satisfaction Survey Form"
+          />
 
-    <section>
-      <div class="flex flex-col justify-center">
-        <p class="text-center font-roboto text-gray-600">See what you can do with Google Forms</p>
-        <p class="text-center text-xl text-gray-600"><i class="bi bi-arrow-down"></i></p>
-      </div>
-    </section>
+          <!-- Container for Text -->
+          <div class="flex flex-col justify-center gap-4 max-w-md">
+            <h2 class="text-4xl text-gray-800">
+              Create an online form as easily as creating a document
+            </h2>
+            <p class="text-xl text-gray-600 my-3 max-wd-sm">
+              Select from multiple question types, drag-and-drop to reorder
+              questions, and customize values as easily as pasting a list.
+            </p>
+          </div>
+          <!-- Text End -->
+        </div>
+        <!-- Container end -->
+      </section>
 
+    </div>
+    <!-- Page Content End -->
   </body>
 </html>
